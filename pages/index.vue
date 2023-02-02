@@ -3,7 +3,7 @@
     <v-row align="center" justify="center">
       <v-col class="col-12 d-flex justify-center">
         <a href="https://inshopcrm.com" target="_blank">
-          <img src="/logo.png" alt="inshopcrm.com" style="width: 200px" />
+          <img src="/logo.png" alt="Myshopcrm.com" style="width: 200px" />
         </a>
       </v-col>
 

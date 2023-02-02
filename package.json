@@ -1,8 +1,8 @@
 {
-  "name": "inshopcrm-client",
-  "description": "Inshop CRM / ERP Client",
+  "name": "myshopcrm-client",
+  "description": "Myshop CRM / ERP Client",
   "version": "2.0.0",
-  "author": "info@inshop.com.ua",
+  "author": "chenchrissh@gmail.com",
   "license": "MIT",
   "scripts": {
     "dev": "nuxt",

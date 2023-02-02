@@ -4,13 +4,13 @@
       <v-col cols="12" sm="auto" class="text-center">
         {{ $date().format('YYYY') }},
         <a href="https://inshopcrm.com" class="white--text" target="_blank">
-          Inshop CRM </a
+          Myshop CRM </a
         >, v3.0.1
       </v-col>
       <v-col cols="12" sm="auto" class="text-center">
         {{ $t('powered_by') }}
         <a href="https://inshopgroup.com" class="white--text" target="_blank">
-          Inshop Group
+          Myshop Group
         </a>
       </v-col>
     </v-row>

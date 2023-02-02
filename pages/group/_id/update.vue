@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style>
-.user-groups .inshop-form {
+.user-groups .myshop-form {
   padding: 0;
 }
 .user-groups .form-group {
@@ -70,7 +70,7 @@ export default {
 .user-groups #roles h2 {
   font-size: 20px;
 }
-.user-groups .inshop-form label.checkbox {
+.user-groups .myshop-form label.checkbox {
   font-size: 17px;
   font-weight: normal;
 }

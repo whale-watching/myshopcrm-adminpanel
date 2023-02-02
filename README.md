@@ -1,16 +1,14 @@
-# INSHOP CRM / ERP / ECOMMERCE
+# MySHOP CRM / ERP / ECOMMERCE
 
-Inshop CRM / ERP is powerful framework which allows to build systems for business with different workflows.
+Myshop CRM / ERP is powerful framework which allows to build systems for business with different workflows.
 It has on board multi language support, clients management, projects & tasks, documents, simple accounting, inventory management, 
 orders & invoice management, possibilities to integrate with third party software, REST API, and many other features.
 
-https://inshopcrm.com/
+![alt text](https://inshopcrm.com/static/vuetify/signin.png "Myshop CRM login page")
 
-![alt text](https://inshopcrm.com/static/vuetify/signin.png "Inshop CRM login page")
+![alt text](https://inshopcrm.com/static/vuetify/dashboard.png "Myshop CRM login dashboard with charts")
 
-![alt text](https://inshopcrm.com/static/vuetify/dashboard.png "Inshop CRM login dashboard with charts")
-
-![alt text](https://inshopcrm.com/static/vuetify/calendar.png "Inshop CRM login dashboard with charts")
+![alt text](https://inshopcrm.com/static/vuetify/calendar.png "Myshop CRM login dashboard with charts")
 
 ## Live demo
 Feel free to check out our demo CRM instance
@@ -18,9 +16,6 @@ Feel free to check out our demo CRM instance
 Username: demo
 
 Password: demo
-
-https://demo.inshopcrm.com/signin
-
 
 ## Main Features
 
@@ -39,18 +34,17 @@ https://demo.inshopcrm.com/signin
 
 ## Technologies
 
+### CRM / ERP / ecommerce
+ - VueJS, Vuex, Vuetify, Nuxt
+ - Docker
+ - GIT
+
 ### Backend
  - PHP 7.2
  - Symfony 5
  - API Platform
  - Postgres
  - Elasticsearch
- 
-### CRM / ERP / ecommerce
- - VueJS, Vuex, Vuetify, Nuxt
- - Docker
- - GIT
-
 
 # Installation
 
@@ -67,7 +61,7 @@ DATABASE_USER=api
 DATABASE_PASSWORD=!ChangeMe!
 
 JWT_PASSPHRASE=!ChangeMe!
-COMPOSE_PROJECT_NAME=inshop-crm
+COMPOSE_PROJECT_NAME=myshop-crm
 ```
 
 docker-compose.yml
@@ -78,7 +72,7 @@ version: '3.2'
 services:
   ecommerce:
     restart: always
-    image: inshopgroup/inshop-crm-ecommerce
+    image: myshopgroup/myshop-crm-ecommerce
     user: node
     working_dir: /var/www
     environment:
@@ -90,7 +84,7 @@ services:
 
   client:
     restart: always
-    image: inshopgroup/inshop-crm-client
+    image: myshopgroup/myshop-crm-client
     user: node
     working_dir: /var/www
     environment:
@@ -102,7 +96,7 @@ services:
 
   php:
     restart: always
-    image: inshopgroup/inshop-crm-api-php-fpm
+    image: myshopgroup/myshop-crm-api-php-fpm
     depends_on:
       - db
     volumes:
@@ -113,7 +107,7 @@ services:
 
   nginx:
     restart: always
-    image: inshopgroup/inshop-crm-api-nginx
+    image: myshopgroup/myshop-crm-api-nginx
     depends_on:
       - php
     ports:
@@ -173,27 +167,27 @@ networks:
 ## For developers
 
 ```bash
-mkdir inshop-crm
-cd inshop-crm
+mkdir myshop-crm
+cd myshop-crm
 
 # api
-git clone git@github.com:inshopgroup/inshop-crm-api.git
-cd inshop-crm-api
+git clone git@github.com:myshopgroup/myshop-crm-api.git
+cd myshop-crm-api
 cp .env.dist .env
 docker-compose up -d
 cd ..
 
 # client
-git clone git@github.com:inshopgroup/inshop-crm-client.git
-cd inshop-crm-client
+git clone git@github.com:myshopgroup/myshop-crm-client.git
+cd myshop-crm-client
 cp .env.dist .env
 yarn install
 yarn run dev
 cd ..
 
 # ecommerce
-git clone git@github.com:inshopgroup/inshop-crm-ecommerce.git
-cd inshop-crm-ecommerce
+git clone git@github.com:myshopgroup/myshop-crm-ecommerce.git
+cd myshop-crm-ecommerce
 cp .env.dist .env
 yarn install
 yarn run dev

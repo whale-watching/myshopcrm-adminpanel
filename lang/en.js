@@ -406,7 +406,7 @@ export default {
   start_session: 'Sign in to start the session',
   yes: 'Yes',
   no: 'No',
-  title: 'Inshop CRM',
+  title: 'Myshop CRM',
   text_title: 'Title',
   signout: 'Signout',
   tokenCreatedAt: 'Token created at',
